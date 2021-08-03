@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="PopupMenu"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_baseline_more_vert_24"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="SOS Will Be Sent To\n"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textNum"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_below="@id/textNum"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="startServiceV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/start"
+            android:textColor="@color/black"
+            android:text="Start"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/stop"
+            app:layout_constraintTop_toBottomOf="@id/start"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/start"
+            app:cornerRadius="10dp"
+            android:backgroundTint="#ffffff"
+            android:onClick="stopService"
+            android:text="stop"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
