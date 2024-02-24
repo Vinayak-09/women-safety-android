@@ -1,4 +1,4 @@
-package com.vinayak09.wsafety;
+package com.Miten94.wsafety;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.vinayak09.wsafety", appContext.getPackageName());
+        assertEquals("com.Miten.wsafety", appContext.getPackageName());
     }
 }
